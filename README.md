@@ -81,10 +81,10 @@ npm run dev
 
 Task	                                              Time
 
-Project setup (Vite + TS + Tailwind)             	30 min
-Quiz logic (navigation, state mgmt)                	1 hr
-UI + gradient + card layout                      	1.5 hrs
-Animations (Framer Motion)	                      45 min
-Result page design	                              30 min
-Bug fixes & polishing	                            30 min
-Total Time Spent	                              ~5 hours
+Project setup (Vite + TS + Tailwind)      -       30 min
+Quiz logic (navigation, state mgmt)       -        1 hr
+UI + gradient + card layout               -       1.5 hrs
+Animations (Framer Motion)	               -       45 min
+Result page design	                     -        30 min
+Bug fixes & polishing	                  -       30 min
+**Total Time Spent	                     -        5 hours**
