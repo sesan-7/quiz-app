@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import type { Question } from "../types";
+
+
+
 
 export default function ResultPage({
   questions,
@@ -39,7 +42,10 @@ export default function ResultPage({
   }, [percent]);
 
   return (
+  
     <div className="w-full text-center py-16">
+
+
       <motion.p
         className="text-sm text-black bg-white px-4 py-1 rounded-lg inline-block"
         initial={{ opacity: 0, y: 10 }}
@@ -50,7 +56,7 @@ export default function ResultPage({
       </motion.p>
 
       <motion.h2
-        className="mt-6 text-7xl font-serifDisplay italic text-primary"
+        className=" font-serifDisplay italic text-primary mt-6 text-[60px] font-serifDisplay  leading-[90px] tracking-[4px] italic text-center bg-gradient-to-r from-[#15313D] to-[#3CABDA] bg-clip-text text-transparent"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
@@ -83,5 +89,6 @@ export default function ResultPage({
         </button>
       </motion.div>
     </div>
+
   );
 }

@@ -1,10 +1,13 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { QUESTIONS } from "../data/questions"
 import QuestionCard from "./QuestionCard"
 import ProgressBar from "./ProgressBar"
 import ResultPage from "./ResultPage"
 import PawLuck from "./PawLuck"  
-import { motion, AnimatePresence } from "framer-motion"
+import {AnimatePresence } from "framer-motion"
+import {motion} from "framer-motion"
+import type { Variants } from "framer-motion"
+
 
 export default function QuizLayout() {
   const [index, setIndex] = useState(0)
@@ -39,7 +42,7 @@ export default function QuizLayout() {
     setCompleted(false)
   }
 
-  const pageVariants = {
+  const pageVariants: Variants = {
     initial: (direction: "down" | "up") => ({
       opacity: 0,
       y: direction === "up" ? 300 : -300,
@@ -56,8 +59,9 @@ export default function QuizLayout() {
     }),
   }
 
+
   return (
-    // <div className="w-full min-h-screen flex justify-center items-center from-[#C6E9F7] to-[#E5F8FF] ">
+
 <div className="w-full min-h-screen flex justify-center items-center ">
 
       <AnimatePresence mode="wait" initial={false}>

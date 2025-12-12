@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import pawGif from "../assets/paw.gif";
 
 export default function PawLuck() {

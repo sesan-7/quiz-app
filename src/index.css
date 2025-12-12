@@ -11,12 +11,13 @@ html, body, #root {
 
 body {
   background: linear-gradient(
-    135deg,
+    120deg,
     #BECFEE,
     #71C6E2,
     #D9F4FA,
     #BECFEE
   );
+  background-color:#F4FDFF;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
