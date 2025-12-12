@@ -1,73 +1,87 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+**Setup Instructions**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+    cd YOUR_REPO
+   
+2. Install dependencies
+npm install
 
-## React Compiler
+3. Start the development server
+npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Tech Stack Used**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+React.js — UI Component framework
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+TypeScript — Type-safe JavaScript
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Vite — Fast build tooling
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Tailwind CSS — Utility-first styling
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Framer Motion — Smooth animations
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+React Icons — Icon support
+
+
+**Key Features Implemented**
+
+**1. Multi-step Quiz Flow**
+
+Next/previous buttons
+
+Submit button
+
+Custom progress bar
+
+**2. Animated UI**
+Page transition animations (Framer Motion)
+
+Animated paw illustration on question 1
+
+**3. Responsive Design**
+
+Looks clean on all screen sizes
+
+Gradient background
+
+Glassmorphism card UI
+
+**4. Result Page**
+
+Final percentage
+
+Restart button
+
+Clean, centered layout
+
+
+**Assumptions Made**
+
+The quiz always contains 5 questions.
+
+Each question has one correct answer.
+
+User must attempt all questions before seeing the results.
+
+The design should be matched as close as possible to the Figma provided.
+
+Uses client-side state only; no backend.
+
+**Time Spent on the Assignment**
+
+Task	                                              Time
+
+Project setup (Vite + TS + Tailwind)             	30 min
+Quiz logic (navigation, state mgmt)                	1 hr
+UI + gradient + card layout                      	1.5 hrs
+Animations (Framer Motion)	                      45 min
+Result page design	                              30 min
+Bug fixes & polishing	                            30 min
+Total Time Spent	                              ~5 hours
