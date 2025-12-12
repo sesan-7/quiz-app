@@ -1,7 +1,7 @@
 # React + TypeScript + Vite
 
 
-**Setup Instructions**
+1.**Setup Instructions**
 
 1. Clone the repository
    git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
@@ -15,7 +15,7 @@ npm run dev
 
 
 
-**Tech Stack Used**
+2. **Tech Stack Used**
 
 React.js — UI Component framework
 
@@ -30,7 +30,7 @@ Framer Motion — Smooth animations
 React Icons — Icon support
 
 
-**Key Features Implemented**
+3. **Key Features Implemented**
 
 **1. Multi-step Quiz Flow**
 
@@ -61,8 +61,7 @@ Restart button
 
 Clean, centered layout
 
-
-**Assumptions Made**
+4.**Assumptions Made**
 
 The quiz always contains 5 questions.
 
@@ -74,7 +73,7 @@ The design should be matched as close as possible to the Figma provided.
 
 Uses client-side state only; no backend.
 
-**Time Spent on the Assignment**
+5. **Time Spent on the Assignment**
 
 Task	                                              Time
 
