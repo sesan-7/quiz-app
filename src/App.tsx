@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import QuizLayout from './components/QuizLayout'
 
 export default function App() {
